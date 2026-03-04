@@ -4,10 +4,6 @@
 from dotenv import load_dotenv
 load_dotenv()
 
-#for internal testing with this token
-from backend.core.security import create_access_token
-print(create_access_token({"service": "internal"}))
-
 import os
 import logging
 import asyncio
@@ -170,7 +166,7 @@ graphql_app = GraphQLRouter(
 
 router = APIRouter()
 
-# Protect BOTH GET + POST on /graphql
+# Protect BOTH GET + POST on /8124data
 router.include_router(
     graphql_app,
     prefix="/8124data",

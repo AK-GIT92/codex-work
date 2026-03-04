@@ -1,1 +1,1 @@
-open ai codex work here
+OpenAI Codex work here.
